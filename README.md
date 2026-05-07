@@ -3,7 +3,7 @@
 Interactive dashboard developed in **Power BI Desktop** to monitor the 2026 Hantavirus outbreak (Andes strain). This project integrates geospatial data with official epidemiological reports.
 
 ## 📊 Dashboard Preview
-![Dashboard Preview](dashboard_preview.png)
+![Dashboard Preview](andes dashboard.png)
 
 ## 📁 Repository Structure
 - **hantaV2.xlsx**: Normalized dataset using OnlyOffice. Source: WHO Disease Outbreak News (DON).

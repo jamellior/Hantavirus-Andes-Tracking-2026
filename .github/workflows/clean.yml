@@ -1,0 +1,14 @@
+name: Clean Jobs
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Clean API
+        run: |
+          curl -f -X GET "${{ secrets.PRODUCTION_URL }}/api/cron/clean" \
+          -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}"
